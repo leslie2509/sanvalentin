@@ -1,0 +1,109 @@
+body {
+    font-size: x-large;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fdceff;
+    overflow: hidden;
+}
+
+#pregunta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5a5f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: auto;
+    max-width: 500px;
+    min-width: 300px;
+    height: auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+label {
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: #f28ab2;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button i {
+    margin-left: 10px;
+}
+
+#boton-iniciar {
+    border-radius: 5px;
+    height: 5%;
+    width: 15%;
+}
+
+#uno {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+@keyframes moverBoton {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(150px, -100px); 
+    }
+}
+
+
+button:disabled {
+    pointer-events: none;
+}
+
+
+#no {
+    transition: transform 0.5s ease-out;
+}
+
+#no.animacion {
+    animation: moverBoton 1s forwards;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: large;
+    }
+
+    #pregunta {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    #uno {
+        width: 80%;
+    }
+
+    button {
+        font-size: 1em;
+    }
+
+    #boton-iniciar {
+        width: 50%;
+        font-size: medium;
+    }
+}
