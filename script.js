@@ -50,7 +50,7 @@ function mostrarVentanaEmergenteNo() {
     ventanaEmergente.style.zIndex = '9999';
 
     const imagen = document.createElement('img');
-    imagen.src = 'img/triste.jpg';  
+    imagen.src = 'triste.jpg';  
     imagen.alt = 'Gato feo tiste';
     imagen.style.width = '80%';  
     imagen.style.borderRadius = '10px';
